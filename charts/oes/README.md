@@ -106,20 +106,20 @@ Parameter | Description | Default
 `opsmxdb.podManagementPolicy` | Rollout strategy for DB(statefulset) pods  | `OrderedReady`
 `opsmxdb.securityContext.fsGroup` | FSGroup that owns the DB pod's volumes | `1000`
 `opsmxdb.storageMountSize` | Storage to be allocated to OpsMx DB | `8Gi`
-`oes.image.gate.registry` | Registry to be used for OES Gate docker images | `opsmx11`
+`oes.image.gate.registry` | Registry to be used for OES Gate docker images | `opsmxdev`
 `oes.image.gate.repository` | Repository to be used for OES Gate docker images | `oes-gate`
 `oes.image.gate.tag` | Tag to be used for OES Gate docker images | `v0.202007101453`
 `oes.image.gate.pullPolicy` | Image pull policy for OES Gate image | `IfNotPresent`
-`oes.image.sapor.registry` | Registry to be used for OES SAPOR docker images | `opsmx11`
+`oes.image.sapor.registry` | Registry to be used for OES SAPOR docker images | `opsmxdev`
 `oes.image.sapor.repository` | Repository to be used for OES SAPOR docker images | `sapor`
 `oes.image.sapor.tag` | Tag to be used for OES SAPOR docker images | `v0.202007101007`
 `oes.image.sapor.pullPolicy` | Image pull policy for OES SAPOR image | `IfNotPresent`
-`oes.image.ui.registry` | Registry to be used for OES UI docker images | `opsmx11`
+`oes.image.ui.registry` | Registry to be used for OES UI docker images | `opsmxdev`
 `oes.image.ui.repository` | Repository to be used for OES UI docker images | `oes-ui`
 `oes.image.ui.tag` | Tag to be used for OES UI docker images | `v0.202007011835`
 `oes.image.ui.pullPolicy` | Image pull policy for OES UI image | `IfNotPresent`
 `oes.autoConfiguration.enabled` | Option enables OES to be configured automatically. Load Balancer IPs will be automatically replaced in the configuration files of oes-gate, oes-ui & sapor. Set it to false if OES is being installed on restricted evnironment. | `true`
-`oes.autoConfiguration.initContainer.image` | Image to be used by Init container for auto configuration | `opsmx11/oes-init:v2`
+`oes.autoConfiguration.initContainer.image` | Image to be used by Init container for auto configuration | `opsmxdev/oes-init:v2`
 `oes.autoConfiguration.initContainer.externalIpCheckDelay` | Expected delay in assigning load balancer IPs to oes-ui & oes-gate in secs | `180`
 `oes.autoConfiguration.initContainer.spinnakerSetupMaxDelay` | Expected time in secs that it takes for Spinnaker to be up & running | `180`
 `oes.config.db.dbUrl` | URL of DB for OES | `jdbc:postgresql://db-opsmx:5432/oesdb`
