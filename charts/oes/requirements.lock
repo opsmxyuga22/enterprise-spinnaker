@@ -1,0 +1,18 @@
+dependencies:
+- name: openldap
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  version: 1.2.5
+- name: spinnaker
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  version: 2.2.2
+- name: elasticsearch
+  repository: ""
+  version: 7.5.0
+- name: kibana
+  repository: ""
+  version: 7.5.0
+- name: fluent-bit
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  version: 1.10.3
+digest: sha256:dd8773c4df1f2b2ea4f78e6527a29d6fccce6bb74d866f8bf1d12fc5da943bd1
+generated: "2020-08-31T13:23:27.830100365+05:30"
